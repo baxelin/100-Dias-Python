@@ -29,3 +29,16 @@
 - Criar uma classe e definir um método estático.
 - Obter e formatar a data e hora atuais no padrão "dd/mm/yyyy HH:mm".
 - Exibir a data e hora formatadas na tela.
+
+## Dia 03 - Exibir a hora atual a cada 2 segundos
+
+
+
+### Conteúdo
+- Código do Dia: Implementação de uma classe que exibe a hora atual a cada 2 segundos e para automaticamente após 15 segundos.
+
+### Objetivos
+- Importar e utilizar as bibliotecas datetime e threading.
+- Criar uma classe Dia003 e definir métodos para a execução de tarefas periódicas.
+- Exibir a hora atual a cada 2 segundos usando o método imprimir_hora_atual_a_cada_2_segundos.
+- Agendar a parada automática da execução após 15 segundos com o método parar_impressao.

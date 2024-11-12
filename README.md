@@ -32,7 +32,7 @@
 
 ## Dia 03 - Exibir a hora atual a cada 2 segundos
 
-
+![code-snapshot-03](https://github.com/user-attachments/assets/16e9d60f-6c95-4475-b5dd-bd04d3d195f3)
 
 ### Conteúdo
 - Código do Dia: Implementação de uma classe que exibe a hora atual a cada 2 segundos e para automaticamente após 15 segundos.

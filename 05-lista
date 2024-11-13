@@ -1,0 +1,48 @@
+from itertools import chain
+
+# Constantes para os instrumentos
+GUITARRA = "Guitarra"
+BATERIA = "Bateria"
+BAIXO = "Baixo"
+VOCAL = "Vocal"
+TECLADOS = "Teclados"
+
+# Classe para representar um membro da banda
+class MembroBanda:
+    def __init__(self, nome, instrumento):
+        self.nome = nome
+        self.instrumento = instrumento
+
+# Lista de membros do Pink Floyd
+pink_floyd = [
+    MembroBanda("David Gilmour", GUITARRA),
+    MembroBanda("Roger Waters", BAIXO),
+    MembroBanda("Richard Wright", TECLADOS),
+    MembroBanda("Nick Mason", BATERIA)
+]
+
+# Lista de membros do Iron Maiden
+iron_maiden = [
+    MembroBanda("Bruce Dickinson", VOCAL),
+    MembroBanda("Steve Harris", BAIXO),
+    MembroBanda("Adrian Smith", GUITARRA),
+    MembroBanda("Dave Murray", GUITARRA),
+    MembroBanda("Nicko McBrain", BATERIA)
+]
+
+# Lista de membros do Black Sabbath
+black_sabbath = [
+    MembroBanda("Ozzy Osbourne", VOCAL),
+    MembroBanda("Geezer Butler", BAIXO),
+    MembroBanda("Toni Iommi", GUITARRA),
+    MembroBanda("Bill Ward", BATERIA)
+]
+
+# Concatenando as listas de membros das bandas
+musicos = chain(pink_floyd, iron_maiden, black_sabbath)
+
+# Filtrando apenas os guitarristas
+guitarristas = [membro.nome for membro in musicos if membro.instrumento == GUITARRA]
+
+# Exibindo os nomes dos guitarristas
+print(guitarristas)
